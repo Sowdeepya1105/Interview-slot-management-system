@@ -16,7 +16,7 @@ router.post('/signup', async (req, res) => {
     const password = req.body.password
    
     if(!email || !password ){
-        return res.json({"message":"invalid request"})
+        return res.json({"message":"invalid request fields"})
     }
     
     //validation email
